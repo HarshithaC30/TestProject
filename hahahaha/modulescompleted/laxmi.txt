@@ -1,0 +1,544 @@
+
+Q1
+
+InternalResourceViewResolver maps incoming request to relevant controller ? True or False
+
+ Single Choice - Select one correct answer from theoptions list. 
+         
+1.TRUE................
+
+2.FALSE
+
+
+
+
+Q2
+
+ _________ method implementation throws FileNotFoundException, assuming that the resource cannot be resolved to a URL.
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.public String getURL() throws IOException
+
+2.protected String getURL() throws FileNotFoundException
+
+3.public URL getURL() throws IOException
+
+4.private URL getURL() throws FileNotFoundException.
+
+
+ 
+Q3
+
+Statement A:
+ The TransactionTemplate adopts the same approach as other spring templates such as JdbcTemplate.
+Statement B:
+TransactionTemplate is not threadsafe 
+
+ Single Choice - Select one correct answer from theoptions list. 
+         
+1.Both Statement A and Statement B are false.
+
+2.Both Statement A and Statement B are true.
+
+3.Statement A is true and Statement B is false ..........................
+
+4.Statement A is false and Statement B is true
+
+
+ 
+Q4
+
+How is the spring’s TestContext Framework designed?
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.Through the use of the ApplicationContext instance.
+
+2.Through the use of annotations
+
+3.Through the extension of the TestContext class
+
+4.Through the extension of AbstractSingleSpringContextTests class
+
+
+
+Q5
+
+Which is used to map the logical View names to actual viewimplementations in spring MVC?
+  
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.ViewResolver.........................
+
+2.HandlerMapping.
+
+3.ModelandView
+
+4.None of the above.
+
+
+
+Q6
+
+What is ifAnyGranted and ifAllGranted in spring?
+
+ Single Choice - Select one correct answer from theoptions list. 
+         
+1.They are properties of the <security:authorize/> tag
+.
+2.They are properties of the <security:authenticate/> tag......................
+
+3.Both of the above
+
+4.None of the above
+
+
+ 
+Q7
+
+Following property is set for what reason
+ spring.autoconfigure.exclude=
+ my.xyz.SomeAutoConfig
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.To exclude unnecessary or misconfigured 
+ Auto configurations via
+ properties..................
+
+2.Reconfiguring 
+ AutoConfiguration via
+ properties
+
+3.Overriding conditions
+
+4.For completely
+ custom 
+ Autoconfiguration
+
+
+
+Q8
+
+When there is a problem in connecting to the database using spring‘s Jdbc, Which of the following exception is thrown?
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.CannotAcquireLockException
+
+2.DataAccessResourceFailureException......................
+
+3.DataIntergrityViolationException.
+
+4.DataRetrievalFailureException. 
+
+
+ 
+Q9
+
+________method implementation is used to check whether a File can be opened.
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.equals(object obj)
+
+2.hashcode()
+
+3.isOpen()
+
+4.exists() ....................  
+
+
+
+Q10
+
+Which of the following are bean factory post processors
+
+ Single Choice - Select one correct answer from theoptions list. 
+         
+1.CustomEditorConfigurer
+
+2.PropertyPlaceholderConfigurer
+
+3.Both of the above..........................
+
+4.None of the above
+
+
+
+Q11
+
+Which of the following method is used to return a single integer returned by the sql statement?
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.QueryForInt()....................
+
+2.IntUpdate()
+
+3.ExecuteInt()
+
+4.ForInt()
+
+
+
+Q12
+
+How do you send the response status back to the client for a spring rest service?
+
+ Single Choice - Select one correct answer from theoptions list. 
+        
+1.This is automatically send back to the user
+
+2.By using @ResponseStatus annotation..........................
+
+3.By using @Status annotation
+
+4.By using @RESTStatus
+
+
+
+Q13
+
+
+Which of the following explains auodetect autowring
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.byName first then byType
+
+2.constructor first, then byType
+
+3.byType first then constructor
+
+4.None of the above.
+ 
+
+
+Q14
+
+How to add a bean in spring application? A bean can be added in spring application using : 
+
+ Single Choice - Select one correct answer from theoptions list. 
+        
+1.   <beans>
+   <bean class="foo" class="com.Foo"/>
+   <bean class="bar" class="com.Bar"/>
+  </beans>
+
+in the Spring configuration file. In the bean tag the id attribute specifies the bean name and the class attribute specifies the fully qualified class name. 
+
+2.<beans>
+  <bean id="foo" class="com.Foo"/>
+  <bean id="bar" class="com.Bar"/>...........................
+</beans>
+
+in the Spring configuration file. In the bean tag the id attribute specifies the bean name and the class attribute specifies the fully qualified class name. 
+
+3.<beantable>
+  <bean id="foo" class="com.Foo"/>
+  <bean id="bar" class="com.Bar"/>
+</beantable>
+
+in the Spring configuration file. In the bean tag the id attribute specifies the bean name and the class attribute specifies the fully qualified class name. 
+
+4.<beans>
+  <bean class="com.Foo"/>
+  <bean " class="com.Bar"/>
+</beans>
+
+in the Spring configuration file. In the bean tag the id attribute specifies the bean name and the class attribute specifies the fully qualified class name. 
+
+
+
+Q15
+
+What is the purpose of ContextLoadListener?
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.To let web container such as tomcat know Spring is running
+
+2.It helps in having callbacks whenever spring context is loaded......................
+
+3.Helps in configuring multiple spring custom xml file
+
+4.None of the above
+
+
+
+Q16
+
+Which build tools are supported by
+ Spring Boot framework out of box
+ 
+ Multiple Choice - This may have multiple correct answers.Select required answer(s) from the options list. 
+        
+1.Maven........
+
+2.Gradle..........
+
+3.Ant..........
+
+4.Make
+
+
+
+Q17
+
+Which of the following is not the types of Advice?
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.Before advice
+
+2.After returning advice.
+
+3.After completion advice.....................
+
+4.After advice.
+
+
+
+Q18
+
+In DAO, The implementation of an application object requires only hibernate session factory.
+This can be provided as a simple bean reference from the spring application context. 
+Select the valid bean implementation for the above scenario:
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.<beans>
+   <bean id=”emplDao” class=”emp.empDao”>
+   <property name=”sessionfactory” ref=”mysessionfactory”>
+   </bean>
+   </beans>..................
+
+2.<beans id=”emplDao” class=”emp.empDao”>
+   <property name=”sessionfactory” ref=”mysessionfactory”>
+   </beans>
+
+3.<beans>
+  < bean id=”emplDao” class=”emp.empDao”>
+   <property name=”*” ref=”mysessionfactory”>
+ </bean>
+ </beans>
+
+4.<beans>
+     <property name=”*” ref=”mysessionfactory”>
+ </bean>
+ </beans>
+
+
+
+Q19
+
+What is the difference between a Point-Cut and a Join-Point?
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.They are the same, just different names
+
+2.Join-Point is the point in the execution of a class, such as a method name, while Pointcut is the expression used to identify join points on which advices are to be executed...............
+
+3.Join-point joins execution of two methods, Point cut cuts the execution of two methods
+
+4.None of the above
+
+
+       
+Q20
+
+How to configure JNDI instead of datasource in spring applicationcontext.xml?
+
+
+ Single Choice - Select one correct answer from theoptions list. 
+
+1.You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+ <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+   <property name="className">
+     <values>java:comp/env/jdbc/appfuse</values>
+   </property>
+ </bean>
+  
+
+2. You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+ <bean name="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+   <property name="viewClass">
+     <value>java:comp/env/jdbc/appfuse</value>
+   </property>
+ </bean>
+  
+
+3.You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+ <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+   <properties name="jndiDataSource">
+     <value>java:comp/env/jdbc/appfuse</value>
+   </properties>
+ </bean>
+  
+4.You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+ <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+   <property name="jndiName">
+     <value>java:comp/env/jdbc/appfuse</value>...........................
+   </property>
+ </bean>
+
+
+  
+Q21
+
+Which is the correct order of execution for the Spring bean life-cycle?
+
+ Single Choice - Select one correct answer from theoptions list. 
+        
+1.@PostConstruct -> init()..........................
+
+2.init() -> @PostConstruct -> afterPropertiesSet()
+
+3.afterPropertiesSet() -> @PostConstruct -> init()
+
+4.None of the Above
+
+
+ 
+Q22
+
+The Java Bean Property is automatically populated by _________
+
+ Single Choice - Select one correct answer from theoptions list. 
+         
+1.DelegatingResponseProcessor. 
+
+2.ResponseProcessor
+
+3.DelegatingRequestProcessor
+ 
+4.RequestProcessor...................
+
+
+
+Q23
+
+What is the purpose of @Qualifier annotation?
+
+ 
+Multiple Choice - This may have multiple correct answers.Select required answer(s) from the options list. 
+        
+1.Spring doesn’t support this annotation.
+ 
+2.It helps specify object with multiple dependency which dependency to inject......................(doubt)
+
+3.It is used in conjunction with @Autowired.
+
+4.Annotation used to qualify the normal bean as spring bean...............
+ 
+
+
+Q24
+
+Which attribute defines the order of the transaction advice that is applied to beans annotated with @Transactional?
+
+ Single Choice - Select one correct answer from theoptions list. 
+         
+1.Order
+
+2.Mode.
+
+3.Target_class.
+ 
+4.Transcation Manager..................
+
+
+
+Q25
+
+What are the different points where weaving can be applied?
+
+ Single Choice - Select one correct answer from theoptions list. 
+         
+1.RunTime.
+
+2.CompileTime.
+
+3.ClassLoadTime.
+
+4.All the Above...............
+
+
+ 
+Q26
+
+Which of the following Statements are true about spring integration with other web frameworks?(choose 3)
+
+ Multiple Choice - This may have multiple correct answers.Select required answer(s) from the options list. 
+        
+1.Use’s ActionSupport class to integrate struts...................
+
+2.Override the Struts RequestProcessor with Spring's DelegatingRequestProcessor ................
+
+3.Delegate Struts Action management to the Spring framework...............
+
+4.By using DelegatingAction Proxy Class 
+
+
+
+Q27
+
+Spring boot is Layered Architecture, similar like Spring Framework.
+  
+ True or False - Select the correct answer 
+     
+1.FALSE
+
+2.TRUE...................
+
+
+ 
+Q28
+
+Which of the following method is used to return a TransactionStatus object that depends on a TransactionDefinition parameter?
+
+Single Choice - Select one correct answer from theoptions list. 
+
+1.getTransaction()................
+
+2.setTransaction()
+
+3.isNewTransaction()
+
+4.setRollbackOnly()
+
+
+ 
+Q29
+
+What is the use of BeforeAdvice in spring?
+
+ Single Choice - Select one correct answer from theoptions list. 
+         
+1.It allows to execute any code before the method is executed
+
+2.It allows to execute any code before an exception is thrown
+
+3.It allows to execute any code before spring container shuts down  
+
+4.All of the above.............
+ 
+
+
+Q30
+ 
+The init-method, destroy-method options are better than having a class implement InitializingBean, DisposableBean interfaces.True or false
+
+Single Choice - Select one correct answer from theoptions list. 
+
+1.TRUE ..................... 
+
+2.FALSE
+ 

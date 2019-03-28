@@ -1,0 +1,363 @@
+
+Java_Spring_Topics_A3 To A5_Cloud1
+
+
+
+Q1
+
+ 
+Which of the following is not the types of Advice?
+Single Choice - Select one correct answer from the options list.
+Before advice.
+After returning advice.
+After completion advice.
+After advice.
+
+
+Q2
+
+ 
+Spring boot is Layered Architecture, similar like Spring Framework.
+True or False - Select the correct answer
+TRUE
+FALSE
+
+Q3
+
+ 
+Which is used to map the logical View names to actual viewimplementations in spring MVC?
+  
+Single Choice - Select one correct answer from the options list.
+ViewResolver.
+HandlerMapping.
+ModelandView.
+None of the above.
+Q4
+
+ 
+package com.acme.hr; 
+public class Employee { 
+private String id, name; 
+public void setName(String name) { 
+  this.name = name; 
+} 
+public void setId(String id) { 
+  this.id = id; 
+} 
+} 
+Based on the sample code above, which bean definition creates an Employee bean and populates the name and id attributes? 
+Single Choice - Select one correct answer from the options list.
+<bean id="employee" class="com.acme.hr.Employee"> 
+<constructor-arg index="0" value="John Doe"/> 
+<constructor-arg index="1" value="JD1"/> 
+</bean> 
+<bean id="employee" class="com.acme.hr.Employee"> 
+<property name="name" value="John Doe"/> 
+<property name="id" value="JD1"/> 
+</bean> 
+
+<bean id="employee" base-package="com.acme.hr" class="Employee"> 
+<property name="name" value="John Doe"/> 
+<property name="id" value="JD1"/> 
+</bean> 
+
+<bean id="employee" class="com.acme.hr.Employee"> 
+<property name="setName" value="John Doe"/> 
+<property name="setId" value="JD1"/> 
+</bean> 
+Q5
+
+ 
+Which of the following interface are not used to create an Advice in Spring framework?
+Single Choice - Select one correct answer from the options list.
+org.aopalliance.intercept.MethodInterceptor
+org.springframework.aop.BeforeAdvice
+org.springframework.aop.MethodSingleton
+org.springframework.aop.ThrowsAdvice
+Q6
+
+ 
+What is the use of <mvc:annotation-driven/> in spring?
+Single Choice - Select one correct answer from the options list.
+It configures the basic setup for a MVC application
+It just let spring know application is using Annotations
+There is no such xml element in Spring
+None of the above
+Q7
+
+ 
+Which of the following method is used to return the description for the resource?
+Single Choice - Select one correct answer from the options list.
+public String toString ()
+public Boolean equals(object obj)
+public int hashCode()
+public String getDescription()
+Q8
+
+ 
+Which interface provides a mechanism to register objects that are created outside the container?
+Single Choice - Select one correct answer from the options list.
+DefaultListableFactoryBean
+AutowireCapableBeanFactory
+SimpleBeanFactory
+StaticBeanFactory
+Q9
+
+ 
+How to configure JNDI instead of datasource in spring applicationcontext.xml?
+Single Choice - Select one correct answer from the options list.
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <property name="className">
+    <values>java:comp/env/jdbc/appfuse</values>
+  </property>
+</bean>
+ 
+
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean name="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <property name="viewClass">
+    <value>java:comp/env/jdbc/appfuse</value>
+  </property>
+</bean>
+ 
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <properties name="jndiDataSource">
+    <value>java:comp/env/jdbc/appfuse</value>
+  </properties>
+</bean>
+ 
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <property name="jndiName">
+    <value>java:comp/env/jdbc/appfuse</value>
+  </property>
+</bean>
+ 
+Q10
+
+ 
+Does spring handle Multipart request?
+Multiple Choice - This may have multiple correct answers. Select required answer(s) from the options list.
+No by default
+Yes, if we configure Multipart resolver with commons library in classpath
+There is no such thing as Multipart request
+None of the above
+Q11
+
+ 
+Which of the following types of testing are supported by spring?
+Multiple Choice - This may have multiple correct answers. Select required answer(s) from the options list.
+Unit Testing.
+Intergration Testing.
+BlackboxTesting
+WhiteBocTesting
+Q12
+
+ 
+The WebApplicationContext exclusively exposes which lifecycle capabilities of the ApplicationContext?
+Single Choice - Select one correct answer from the options list.
+Provides internationalization
+Provides pluggable servlet filters
+Provides the Servlet Context
+Provides a Security Context
+Q13
+
+ 
+Which of the following annotations can be used on fields, parameters or custom annotations?
+Single Choice - Select one correct answer from the options list.
+@autowired 
+@resource.
+@Qualifier.
+@component.
+Q14
+
+ 
+What is the difference between RowMapper and RowCallbackHandler?
+Single Choice - Select one correct answer from the options list.
+Both offer the same functionality
+RowMapper is used to map the entire row into an object while RowCallbackHandler allows to perform custom operations upon retrieving data
+RowMapper maps the particular column only to a property while RowCallbackHandler is a callback method that also returns an object.
+None of the above
+Q15
+
+ 
+DevTools is enabled in the production
+environment by default.
+True or False - Select the correct answer
+FALSE
+TRUE
+Q16
+
+ 
+Which of the following method is used to return fetch size specified for the JdbcTemplate class?
+Single Choice - Select one correct answer from the options list.
+getMaxRows()
+getFetchSize()
+getColumnMapRowMapper()
+getColumnSize()
+Q17
+
+ 
+<bean id="employee" class="com.acme.hr.Employee"> 
+<property name="timecard"><
+ref bean="timesheet"/>
+</property> 
+<property name="name" value="John Doe"/> 
+</bean> 
+
+<bean id="timesheet" class="com.acme.hr.Timesheet"/> 
+<bean id="timeEntry" class="com.acme.hr.TimeEntry" scope="prototype"/> 
+
+Based on the sample code above, if the bean factory is asked for each defined bean three times, how many bean instances will Spring be managing in the bean factory? 
+Single Choice - Select one correct answer from the options list.
+1.0
+2.0
+5.0
+6.0
+Q18
+
+ 
+________ package provides the features of IOC and dependency injection services.
+Single Choice - Select one correct answer from the options list.
+ORM
+AOP
+Core
+DAO
+Q19
+
+ 
+TransactionStatus instance can be used ____________
+Single Choice - Select one correct answer from the options list.
+To force a transaction rollback
+To set the transaction mode (declarative or programmatic)
+To determine capability of the RDBMS to support distributed transactions
+To associate a database update with a transaction
+Q20
+
+ 
+Spring view resolvers can handle support for PDF, Excel files? 
+Single Choice - Select one correct answer from the options list.
+TRUE
+FALSE
+Q21
+
+ 
+Which of the following interface is implemented for all Spring-based web controllers?
+Single Choice - Select one correct answer from the options list.
+org.springframework.web.servlet.mvc.AbstractFormController
+org.springframework.web.servlet.mvc.AbstractCommandController
+org.springframework.web.servlet.mvc.AbstractController
+org.springframework.web.servlet.mvc.WebContentInterceptor
+Q22
+
+ 
+Consider the following scenario:
+For a method updateUser , we dont want the rollback for UserNotFoundException.
+what are the changes to be done in the configuration file? 
+      <tx:advice id="txAdvice">
+      <tx:attributes>
+     <tx:method name="updateUser"/>
+      <tx:method name="*"/>
+     </tx:attributes>
+     </tx:advice>
+
+Single Choice - Select one correct answer from the options list.
+replace <tx:method name="updateUser"/> with 
+<tx:method name="updateUser" no-rollback-for="UserNotFoundException"/>
+
+replace <tx:method name="updateUser"/> with 
+<tx:method name="updateUser,-UserNotFoundException/>
+replace <tx:method name="updateUser"/> with 
+<tx:method name="updateUser,+UserNotFoundException/>
+replace <tx:method ="updateUser"/> with 
+<tx:method name="updateUser" no-rollback-for="UserNotFoundException"/>
+Q23
+
+ 
+What is the use of BeforeAdvice in spring?
+Single Choice - Select one correct answer from the options list.
+It allows to execute any code before the method is executed
+It allows to execute any code before an exception is thrown
+It allows to execute any code before spring container shuts down
+All of the above
+Q24
+
+ 
+Which attribute defines the order of the transaction advice that is applied to beans annotated with @Transactional?
+
+Single Choice - Select one correct answer from the options list.
+Order
+  Mode.
+Target_class.
+Transcation Manager.
+Q25
+
+ 
+Following property is set for what reason
+spring.autoconfigure.exclude=
+my.xyz.SomeAutoConfig
+Single Choice - Select one correct answer from the options list.
+To exclude unnecessary or misconfigured 
+Auto configurations via
+properties 
+Reconfiguring 
+AutoConfiguration via
+properties
+Overriding conditions
+For completely
+custom 
+Autoconfiguration
+Q26
+
+ 
+Which of the following injection can invoke a parameterized constructor?
+Single Choice - Select one correct answer from the options list.
+Setter injection
+Constructor injection
+Dependency injection
+Injection
+Q27
+
+ 
+_____________ interface provides a simple way for transactional code to control the transaction execution and query transaction status.
+    
+Single Choice - Select one correct answer from the options list.
+Transaction isolation.
+Transaction propagation.
+Transaction Status.
+Transaction timeout
+
+Q28
+
+ 
+Which of the following event is published when the Application Context is Closed?
+Single Choice - Select one correct answer from the options list.
+RefreshEvent.
+ContextClosedEvent.
+RequestHandledEvent.
+Publish Event.
+Q29
+
+ 
+What is the default autowiring mode?
+Single Choice - Select one correct answer from the options list.
+autodetect
+There is no default autowiring mode
+byName
+byType
+Q30
+
+ 
+Which among the following are templates provided by Spring Jdbc framework
+Single Choice - Select one correct answer from the options list.
+JdbcTemplate
+NamedParameterJdbcTemplate
+SimpleJdbcTemplate
+All of the above
+

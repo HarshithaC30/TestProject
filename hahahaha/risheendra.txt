@@ -1,0 +1,333 @@
+
+Java_Spring_Topics_A3 To A5_Cloud1
+
+
+Section:
+1
+Time Left : 00 : 03 List View 
+    Active     Attempted     Not Attempted
+Q1
+
+ 
+What is the difference between lazy and eager fetching in Spring?
+Single Choice - Select one correct answer from the options list.
+Lazy init fetches the collection of records on demand while eager fetching fetches all the collection records
+Lazy initialization helps improve the performance of the application as it saves memory while eager fetching is useful but memory intensive
+Both A and B
+None of the above
+Q2
+
+ 
+Which of the following package contains an implementation of the JNDI and it is useful for setting up a single JNDI environment for test suites
+Single Choice - Select one correct answer from the options list.
+org.springframework.mock.jndi
+org.springframework.mock.web.
+org.springframework.jndi
+org.springframework.mock.web.portlet.
+Q3
+
+ 
+Select the strategy that allows java serialization by supporting any java interface in Spring application:
+Single Choice - Select one correct answer from the options list.
+Spring’s Http invoker.
+Hessian.
+Remote Method Invocation
+Burlap
+
+Q4
+
+ 
+Which dependency need to be
+mentioned to enable Spring MVC 
+module in an application
+Single Choice - Select one correct answer from the options list.
+spring-boot-starter-data-jpa
+spring-boot-starter-web
+spring-boot-starter-test
+spring-boot-starter-tomcat
+Q5
+
+ 
+Spring is lightweight when it comes to size and transparency. The basic version of spring framework is around 1MB. And the processing overhead is also very negligible.State true or false.
+Single Choice - Select one correct answer from the options list.
+True.
+False.
+Q6
+
+ 
+Is the following statement true or false? Spring's default behavior for declarative roll back is only for unchecked exceptions.
+Single Choice - Select one correct answer from the options list.
+Correct
+Wrong
+Q7
+
+ 
+Which of the following classes are supported by Spring Http invoker?
+Multiple Choice - This may have multiple correct answers. Select required answer(s) from the options list.
+HttpInvokerProxyFactoryBean
+HttpInvokerServiceExporter.
+HessianProxyFactoryBean.
+HessianServiceExporter
+Q8
+
+ 
+What is the use of BeforeAdvice in spring?
+Single Choice - Select one correct answer from the options list.
+It allows to execute any code before the method is executed
+It allows to execute any code before an exception is thrown
+It allows to execute any code before spring container shuts down
+All of the above
+Q9
+
+ 
+Spring boot is Layered Architecture, similar like Spring Framework.
+True or False - Select the correct answer
+FALSE
+TRUE
+Q10
+
+ 
+Which of the following interface is implemented for all Spring-based web controllers?
+Single Choice - Select one correct answer from the options list.
+org.springframework.web.servlet.mvc.AbstractFormController
+org.springframework.web.servlet.mvc.AbstractCommandController
+org.springframework.web.servlet.mvc.AbstractController
+org.springframework.web.servlet.mvc.WebContentInterceptor
+Q11
+
+ 
+The Java Bean Property is automatically populated by _________
+Single Choice - Select one correct answer from the options list.
+DelegatingResponseProcessor.
+ResponseProcessor
+DelegatingRequestProcessor
+RequestProcessor.
+
+Q12
+
+ 
+Which build tools are supported by
+Spring Boot framework out of box
+Multiple Choice - This may have multiple correct answers. Select required answer(s) from the options list.
+Maven
+Gradle
+Ant
+Make
+Q13
+
+ 
+Which controller is used to transforms the virtual filename at the end of a URL into a view name and returns that view?.
+Single Choice - Select one correct answer from the options list.
+UrlFilenameViewController.
+SimpleFormController.
+BaseCommandController
+AbstractUrlViewController.
+Q14
+
+ 
+Which of the following is not the types of Advice?
+Single Choice - Select one correct answer from the options list.
+Before advice.
+After returning advice.
+After completion advice.
+After advice.
+Q15
+
+ 
+Select the valid statement for deleting the table using Spring Jdbc :
+Single Choice - Select one correct answer from the options list.
+JdbcTemplate ss=new JdbcTemplate (dataSource);
+     ss.executeQuery(“delete from mytable”);
+  
+JdbcTemplate ss=new JdbcTemplate (dataSource);
+     ss.executeUpdate(“delete from mytable”);
+JdbcTemplate ss=new JdbcTemplate (dataSource);
+     ss.execute(“delete from mytable”);
+ 
+JdbcTemplate ss=new JdbcTemplate (dataSource);
+     ss.executeDelete(delete form mytable);
+Q16
+
+ 
+In DAO, The implementation of an application object requires only hibernate session factory.
+This can be provided as a simple bean reference from the spring application context. 
+Select the valid bean implementation for the above scenario:
+Single Choice - Select one correct answer from the options list.
+<beans>
+   <bean id=”emplDao” class=”emp.empDao”>
+   <property name=”sessionfactory” ref=”mysessionfactory”>
+   </bean>
+   </beans>
+<beans id=”emplDao” class=”emp.empDao”>
+   <property name=”sessionfactory” ref=”mysessionfactory”>
+   </beans>
+ 
+<beans>
+  < bean id=”emplDao” class=”emp.empDao”>
+   <property name=”*” ref=”mysessionfactory”>
+ </bean>
+ </beans>
+<beans>
+     <property name=”*” ref=”mysessionfactory”>
+ </bean>
+ </beans>
+Q17
+
+ 
+What is the use of @PathVariable annotation in Spring REST?
+Single Choice - Select one correct answer from the options list.
+No such annotation exist in Spring
+Used to bind the REST url parameters
+Configuration annotation used to configure relative and absolute path
+None of the above
+Q18
+
+ 
+Which of the following elements is used for constructor injection
+Single Choice - Select one correct answer from the options list.
+constructor-value
+constructorValue
+consructor-arg
+All of the above
+Q19
+
+ 
+Statement A:
+The TransactionTemplate adopts the same approach as other spring templates such as JdbcTemplate.
+Statement B:
+TransactionTemplate is not threadsafe 
+Single Choice - Select one correct answer from the options list.
+Both Statement A and Statement B are false.
+Both Statement A and Statement B are true.
+Statement A is true and Statement B is false .
+Statement A is false and Statement B is true
+Q20
+
+ 
+What does REST stand for?
+Single Choice - Select one correct answer from the options list.
+Representation State Transfer
+Read Eat Sleep Travel
+Rewrite Effort Stack Trace
+None of the above
+Q21
+
+ 
+_____________ interface provides a simple way for transactional code to control the transaction execution and query transaction status.
+    
+Single Choice - Select one correct answer from the options list.
+Transaction isolation.
+Transaction propagation.
+Transaction Status.
+Transaction timeout
+
+Q22
+
+ 
+How do you perform URL mappings to spring controller methods?
+Single Choice - Select one correct answer from the options list.
+By using @RequestMapping and configuring the URL as attribute
+By using @URLMapping and configuring the URL as attribute
+By using @ControllerMapping and configuring the URL as attribute
+None of the above
+Q23
+
+ 
+Two <bean> with completely different values in their class attributes can still inherit properties from parent bean. True or False
+Single Choice - Select one correct answer from the options list.
+TRUE
+FALSE
+Q24
+
+ 
+How to configure JNDI instead of datasource in spring applicationcontext.xml?
+Single Choice - Select one correct answer from the options list.
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <property name="className">
+    <values>java:comp/env/jdbc/appfuse</values>
+  </property>
+</bean>
+ 
+
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean name="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <property name="viewClass">
+    <value>java:comp/env/jdbc/appfuse</value>
+  </property>
+</bean>
+ 
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <properties name="jndiDataSource">
+    <value>java:comp/env/jdbc/appfuse</value>
+  </properties>
+</bean>
+ 
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <property name="jndiName">
+    <value>java:comp/env/jdbc/appfuse</value>
+  </property>
+</bean>
+ 
+Q25
+
+ 
+_______________is used to wrap the target DataSource to add awareness for spring managed transactions in J2EE Server.
+Single Choice - Select one correct answer from the options list.
+TransactionAwareDataSourceProxy .
+DataSourceTransactionManager.
+SmartDataSource.
+AbstractDataSource.
+Q26
+
+ 
+Which of the following are the benefits of Aspect Oriented Programming?
+Single Choice - Select one correct answer from the options list.
+More Code reuse
+Late Binding of design decisions.
+Higher modularization
+All the above
+Q27
+
+ 
+How would you define an Aspect?
+Single Choice - Select one correct answer from the options list.
+An aspect is a class that holds a Pointcut at a particular join point defining the type of advice to execute when that pointcut expression matches
+Aspect is simple a class nothing more
+A point in the execution of a program such as method name
+Expression that is used to identify join-points
+Q28
+
+ 
+In Spring, the basic IOC container is called as ___________.
+Single Choice - Select one correct answer from the options list.
+Package
+Web container
+Bean factory
+EJB container
+Q29
+
+ 
+Which is the default handler mapping used by DispatcherServlet
+Single Choice - Select one correct answer from the options list.
+BeanNameHandlerMapping
+SimpleUrlHandlerMapping
+BeanNameUrlHandlerMapping
+None of the above
+Q30
+
+ 
+Which of the following methods are available in JdbcTemplate class?
+Single Choice - Select one correct answer from the options list.
+QueryForInt(String sql).
+QueryForInt(String Sql,Object[] args)
+QueryForList(Sting sql,Object[] args_
+All the above.
+Spring
+1234567891011121314151617181920212223242526272829301 out of 30 

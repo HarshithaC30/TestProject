@@ -1,0 +1,317 @@
+
+Q1
+
+ 
+What is the use of SessionFactory?
+Multiple Choice - This may have multiple correct answers. Select required answer(s) from the options list.
+It is a factory pattern provided by Hibernate and cannot be used as such in Spring
+Manages the sessions linked the database.................
+Provides session one can use in the DAO to work with the database.................
+None of the above
+Q2
+
+ 
+_____________ interface provides a simple way for transactional code to control the transaction execution and query transaction status.
+    
+Single Choice - Select one correct answer from the options list.
+Transaction isolation.
+Transaction propagation.
+Transaction Status..............
+Transaction timeout
+
+Q3
+
+ 
+Consider the following code 
+. <tx:advice id="txAdvice" transaction-manager="txManager"> 
+<tx:attributes> 
+  <tx:method name="*" read-only="true" rollback-for="NoEmployeeFound"/> 
+</tx:attributes> 
+</tx:advice>
+Based on the sample code above, the rollback-for attribute within the <tx:method> element causes Spring to rollback a transaction if a(n):
+Single Choice - Select one correct answer from the options list.
+Checked exception of the class "NoEmployeeFound" or any unchecked exception or error is thrown.
+checked exception of the class "NoEmployeeFound" is thrown.
+throwable containing the message "NoEmployeeFound" is thrown.
+unchecked exception of the class "NoEmployeeFound" or any checked exception or error is thrown.
+Q4
+
+ 
+DevTools is enabled in the production
+environment by default.
+True or False - Select the correct answer
+TRUE
+FALSE...............
+Q5
+
+ 
+Which of the following types of testing are supported by spring?
+Multiple Choice - This may have multiple correct answers. Select required answer(s) from the options list.
+Unit Testing.............
+Intergration Testing...............
+BlackboxTesting
+WhiteBocTesting
+Q6
+
+ 
+Choose the scope which is added in Spring5 version?
+Single Choice - Select one correct answer from the options list.
+Session
+WebSocket
+Singleton.............
+Prototype
+Q7
+
+ 
+Which of the following class is used to manage the database connection in spring’s JDBC API?
+Single Choice - Select one correct answer from the options list.
+DataSourceUtils..............
+SmartDataSource.
+AbstractDataSource.
+SingleConnectionDataSource.
+Q8
+
+ 
+Select the true statements about SQLErrorCodeSQLExceptionTranslator?(choose 3)
+Multiple Choice - This may have multiple correct answers. Select required answer(s) from the options list.
+SQLErrorCodeSQLExceptionTranslator Apply ErrorCode Matching...............
+SQLErrorCodeSQLExceptionTranslator use fallback translator.................
+Try custom translation implemented by any subclass
+SQLErrorCodeSQLExceptionTranslator is the implementation of SQLExceptionTranslator that is used by default..................
+Q9
+
+ 
+What is the use of BeforeAdvice in spring?
+Single Choice - Select one correct answer from the options list.
+It allows to execute any code before the method is executed
+It allows to execute any code before an exception is thrown
+It allows to execute any code before spring container shuts down
+All of the above.....................
+Q10
+
+ 
+Which element is used in Spring for basic method replacement
+Single Choice - Select one correct answer from the options list.
+replaced-method................
+replace-method
+replaceMethod
+None of the above
+Q11
+
+ 
+Which of the following interface are not used to create an Advice in Spring framework?
+Single Choice - Select one correct answer from the options list.
+org.aopalliance.intercept.MethodInterceptor
+org.springframework.aop.BeforeAdvice
+org.springframework.aop.MethodSingleton..................
+org.springframework.aop.ThrowsAdvice
+Q12
+
+ 
+Statement A: 
+Unit Tests are a series of tests which verifies each component of your application.
+Statement B: 
+Unit Test not only to test successes, but also to test failures.
+
+Single Choice - Select one correct answer from the options list.
+Statement A and B are true..................
+Statement A and B are false.
+Statement A is true and B is false.
+Statement A is false and b is true.
+Q13
+
+ 
+Which is the correct way to configure server port in spring boot application
+Single Choice - Select one correct answer from the options list........................
+add property 'server.port' in application.properties in /src/main/resources
+set boot.server.port as a system property using JVM command line option 
+adding an entry in conf/context.xml of embedded container
+add property server: port: 8080 in application.properties in /src/main/resources
+Q14
+
+ 
+In DAO, The implementation of an application object requires only hibernate session factory.
+This can be provided as a simple bean reference from the spring application context. 
+Select the valid bean implementation for the above scenario:
+Single Choice - Select one correct answer from the options list.
+<beans>
+   <bean id=”emplDao” class=”emp.empDao”>
+   <property name=”sessionfactory” ref=”mysessionfactory”>
+   </bean>
+   </beans>.................
+<beans id=”emplDao” class=”emp.empDao”>
+   <property name=”sessionfactory” ref=”mysessionfactory”>
+   </beans>
+ 
+<beans>
+  < bean id=”emplDao” class=”emp.empDao”>
+   <property name=”*” ref=”mysessionfactory”>
+ </bean>
+ </beans>
+<beans>
+     <property name=”*” ref=”mysessionfactory”>
+ </bean>
+ </beans>
+Q15
+
+ 
+What are the different points where weaving can be applied?
+Single Choice - Select one correct answer from the options list.
+RunTime.
+CompileTime.
+ClassLoadTime.
+All the Above.
+Q16...............
+
+ 
+SQLProvider:
+ Has two methods – getSql() and getRecord()
+ State true or false.
+ 
+Single Choice - Select one correct answer from the options list.
+True.
+False..................
+Q17
+
+ 
+Consider the scenario 
+   If A class A has a dependency to class B if class uses class B as a variable.
+   If dependency injection is used then the class B is given to class A via the constructor of the class A
+
+Choose the injection concept supported by this scenario?
+
+Single Choice - Select one correct answer from the options list.
+Setter injection
+Constructor injection.................
+Getter injection.
+class injection
+Q18
+
+ 
+In ActionSupport class, ___________ method is used for integrating struts with spring by creating spring context manually.
+Single Choice - Select one correct answer from the options list.
+getWebApplicationContext()..............
+getApplicationContext()
+getRequestContext()
+getXMLApplicationContext()
+Q19
+
+ 
+What is the default role for an authenticated user?
+Single Choice - Select one correct answer from the options list.
+ROLE_ANONYMOUS
+There is no default role
+ROLE_AUTHENTICATED..............
+None of the above
+Q20
+
+ 
+Which of the following method is used to process the ResultSet for the given Stored Procedure?
+
+Single Choice - Select one correct answer from the options list.
+processResultSet(ResultSet rs)
+protected Map extractOutputParameters(CallableStatement cs, List parameters)
+protected Map extractReturnedResultSets(CallableStatement cs, List parameters, int  updateCount)
+processResultSet(ResultSet rs, ResultSetSupportingSqlParameter param)
+
+Q21
+
+ 
+Which dependency need to be
+mentioned to enable Spring MVC 
+module in an application
+Single Choice - Select one correct answer from the options list.
+spring-boot-starter-data-jpa
+spring-boot-starter-web......................
+spring-boot-starter-test
+spring-boot-starter-tomcat
+Q22
+
+ 
+The WebApplicationContext exclusively exposes which lifecycle capabilities of the ApplicationContext?
+Single Choice - Select one correct answer from the options list.
+Provides internationalization.......................
+Provides pluggable servlet filters
+Provides the Servlet Context
+Provides a Security Context
+Q23
+
+ 
+Which tags deals configuring collections, referencing constants in spring configuration file?
+Single Choice - Select one correct answer from the options list.
+Util..................
+J2ee
+JMS
+AOP
+Q24
+
+ 
+Which of the following scope is used to define a single bean definition to any number of object instances?
+Single Choice - Select one correct answer from the options list.
+Request
+Session
+Prototype
+Singleton.............................
+Q25
+
+ 
+Which of the following annotations can be used on fields, parameters or custom annotations?
+Single Choice - Select one correct answer from the options list.
+@autowired .....................
+@resource.
+@Qualifier.
+@component.
+Q26
+
+ 
+What is the purpose of HandlerMappings in spring?...
+Single Choice - Select one correct answer from the options list.
+Maps the incoming request to the relevant controller.......................
+Manages the traffic for we requests
+Maps the type of view that an application would display
+Configures Spring for MVC support
+Q27
+
+ 
+Springs <security:intercept-url/> tag provides facility to secure url resources? 
+Single Choice - Select one correct answer from the options list.
+TRUE..................
+FALSE
+Q28
+
+ 
+_____________ enables you to access JavaBeans (classes) that are instantiated, wired and managed by the Spring container.
+Single Choice - Select one correct answer from the options list.
+SessionFactory.
+SessionFacade
+BeanFactroy....................
+none of the above.
+Q29
+
+ 
+Which is used to map the logical View names to actual viewimplementations in spring MVC?
+  
+Single Choice - Select one correct answer from the options list.
+ViewResolver...................
+HandlerMapping.
+ModelandView.
+None of the above.
+Q30
+
+ 
+How to configure spring in a web application?
+Single Choice - Select one correct answer from the options list.
+<listener>
+  <listener-class> context.ContextLoaderListener</listener-class>
+</listener>
+<listener>
+  <listener-class>org.springframework.web.context</listener-class>
+</listener>
+<listener>...........................................................................
+  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
+<listener>
+  <listener-class>org.web.context.ContextLoaderListener</listener-class>
+</listener>
+Spring
+12345678910111213141516171819202122232425262728293015 out of 30 

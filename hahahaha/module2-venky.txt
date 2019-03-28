@@ -1,0 +1,600 @@
+ 
+Java_Spring_Topics_A3 To A5_Cloud1
+
+Section:
+1
+Time Left : 26 : 19 
+List View 
+
+
+    Active     Attempted     Not Attempted 
+Q1
+  
+JdbcTemplate class is a stateless, threadsafe class and it can instantiate a single instance to be used for each DAO. State true or false.
+Single Choice - Select one correct answer from the options list. 
+
+
+True. 
+
+
+False.
+
+Q2
+  
+______________ is responsible for opening, closing, and managing Hibernate Sessions using spring.
+Single Choice - Select one correct answer from the options list. 
+
+
+Session Factory
+
+
+SessionFacade
+
+
+HibernateTemplate
+
+
+LocalSessionFactory.
+
+Q3
+  
+What is the difference between lazy and eager fetching in Spring?
+Single Choice - Select one correct answer from the options list. 
+
+
+Lazy init fetches the collection of records on demand while eager fetching fetches all the collection records
+
+
+Lazy initialization helps improve the performance of the application as it saves memory while eager fetching is useful but memory intensive
+
+
+Both A and B
+
+
+None of the above
+
+Q4
+  
+DataSource implementations in web application are not Threadsafe. State true or false 
+Single Choice - Select one correct answer from the options list. 
+
+
+True. 
+
+
+False.
+
+Q5
+  
+You can run SpringMVC application through java main method? 
+Single Choice - Select one correct answer from the options list. 
+
+
+TRUE
+
+
+FALSE
+
+Q6
+  
+________method implementation is used to check whether a File can be opened.
+Single Choice - Select one correct answer from the options list. 
+
+
+equals(object obj)
+
+
+hashcode()
+
+
+isOpen()
+
+
+exists()
+
+Q7
+  
+How to add a bean in spring application? A bean can be added in spring application using : 
+Single Choice - Select one correct answer from the options list. 
+
+
+
+   <beans>
+   <bean class="foo" class="com.Foo"/>
+   <bean class="bar" class="com.Bar"/>
+  </beans>
+
+in the Spring configuration file. In the bean tag the id attribute specifies the bean name and the class attribute specifies the fully qualified class name. 
+
+
+
+
+<beans>
+  <bean id="foo" class="com.Foo"/>
+  <bean id="bar" class="com.Bar"/>
+</beans>
+
+in the Spring configuration file. In the bean tag the id attribute specifies the bean name and the class attribute specifies the fully qualified class name. 
+
+
+
+<beantable>
+  <bean id="foo" class="com.Foo"/>
+  <bean id="bar" class="com.Bar"/>
+</beantable>
+
+in the Spring configuration file. In the bean tag the id attribute specifies the bean name and the class attribute specifies the fully qualified class name. 
+
+
+
+<beans>
+  <bean class="com.Foo"/>
+  <bean " class="com.Bar"/>
+</beans>
+
+in the Spring configuration file. In the bean tag the id attribute specifies the bean name and the class attribute specifies the fully qualified class name. 
+
+
+Q8
+  
+Which of the following Statements are true about spring integration with other web frameworks?(choose 3)
+Multiple Choice - This may have multiple correct answers. Select required answer(s) from the options list. 
+
+
+Use’s ActionSupport class to integrate struts.
+
+
+Override the Struts RequestProcessor with Spring's DelegatingRequestProcessor .
+
+
+Delegate Struts Action management to the Spring framework.
+
+
+By using DelegatingAction Proxy Class 
+
+Q9
+  
+Which of the following package provides the feature of multipart functionality?
+Single Choice - Select one correct answer from the options list. 
+
+
+Core
+
+
+DAO
+
+
+AOP
+
+
+Web
+
+Q10
+  
+Which of the following method is used to process the ResultSet for the given Stored Procedure?
+
+Single Choice - Select one correct answer from the options list. 
+
+
+processResultSet(ResultSet rs)
+
+
+protected Map extractOutputParameters(CallableStatement cs, List parameters)
+
+
+protected Map extractReturnedResultSets(CallableStatement cs, List parameters, int  updateCount)
+
+
+processResultSet(ResultSet rs, ResultSetSupportingSqlParameter param)
+
+
+Q11
+  
+Which build tools are supported by
+Spring Boot framework out of box
+Multiple Choice - This may have multiple correct answers. Select required answer(s) from the options list. 
+
+
+Maven
+
+
+Gradle
+
+
+Ant
+
+
+Make
+
+Q12
+  
+Which of the following annotations can be used on fields, parameters or custom annotations?
+Single Choice - Select one correct answer from the options list. 
+
+
+@autowired 
+
+
+@resource.
+
+
+@Qualifier. 
+
+
+@component.
+
+Q13
+  
+What does MVC stand for?
+Single Choice - Select one correct answer from the options list. 
+
+
+Model View Command
+
+
+Model View Controller
+
+
+Mapped View Controller
+
+
+Mapped View Command
+
+Q14
+  
+The WebApplicationContext exclusively exposes which lifecycle capabilities of the ApplicationContext?
+Single Choice - Select one correct answer from the options list. 
+
+
+Provides internationalization
+
+
+Provides pluggable servlet filters
+
+
+Provides the Servlet Context
+
+
+Provides a Security Context
+
+Q15
+  
+Which of the following methods are available in JdbcTemplate class?
+Single Choice - Select one correct answer from the options list. 
+
+
+QueryForInt(String sql).
+
+
+QueryForInt(String Sql,Object[] args)
+
+
+QueryForList(Sting sql,Object[] args_
+
+
+All the above.
+
+Q16
+  
+Consider the scenario 
+   If A class A has a dependency to class B if class uses class B as a variable.
+   If dependency injection is used then the class B is given to class A via a setter.
+Choose the injection concept supported by this scenario.
+Single Choice - Select one correct answer from the options list. 
+
+
+Setter injection 
+
+
+Constructor injection.
+
+
+Getter injection.
+
+
+class injection
+
+Q17
+  
+Which of the following is a Built in Resource Implementations that comes with spring?
+Single Choice - Select one correct answer from the options list. 
+
+
+UrlResource
+
+
+ClassResource
+
+
+JMSQResource
+
+
+IOResource
+ 
+
+Q18
+  
+Which is the correct way to configure server port in spring boot application
+Single Choice - Select one correct answer from the options list. 
+
+
+add property 'server.port' in application.properties in /src/main/resources
+
+
+set boot.server.port as a system property using JVM command line option 
+
+
+adding an entry in conf/context.xml of embedded container
+
+
+add property server: port: 8080 in application.properties in /src/main/resources
+
+Q19
+  
+Which of the following interface are not used to create an Advice in Spring framework?
+Single Choice - Select one correct answer from the options list. 
+
+
+org.aopalliance.intercept.MethodInterceptor
+
+
+org.springframework.aop.BeforeAdvice
+
+
+org.springframework.aop.MethodSingleton
+
+
+org.springframework.aop.ThrowsAdvice
+
+Q20
+  
+Which property is used to indicate preference among multiple handler mappings
+Single Choice - Select one correct answer from the options list. 
+
+
+order
+
+
+position
+
+
+index
+
+
+None of the above
+
+Q21
+  
+A spring view can return null, view name, model object? 
+Single Choice - Select one correct answer from the options list. 
+
+
+TRUE
+
+
+FALSE
+
+Q22
+  
+Consider the following scenario:
+For a method updateUser , we dont want the rollback for UserNotFoundException.
+what are the changes to be done in the configuration file? 
+      <tx:advice id="txAdvice">
+      <tx:attributes>
+     <tx:method name="updateUser"/>
+      <tx:method name="*"/>
+     </tx:attributes>
+     </tx:advice>
+
+Single Choice - Select one correct answer from the options list. 
+
+
+replace <tx:method name="updateUser"/> with 
+<tx:method name="updateUser" no-rollback-for="UserNotFoundException"/>
+
+
+
+replace <tx:method name="updateUser"/> with 
+<tx:method name="updateUser,-UserNotFoundException/>
+
+
+replace <tx:method name="updateUser"/> with 
+<tx:method name="updateUser,+UserNotFoundException/>
+
+
+replace <tx:method ="updateUser"/> with 
+<tx:method name="updateUser" no-rollback-for="UserNotFoundException"/>
+
+Q23
+  
+What is the use of BeforeAdvice in spring?
+Single Choice - Select one correct answer from the options list. 
+
+
+It allows to execute any code before the method is executed
+
+
+It allows to execute any code before an exception is thrown
+
+
+It allows to execute any code before spring container shuts down
+
+
+All of the above
+
+Q24
+  
+Choose the scope which is added in Spring5 version?
+Single Choice - Select one correct answer from the options list. 
+
+
+Session
+
+
+WebSocket
+
+
+Singleton
+
+
+Prototype
+
+Q25
+  
+Which of the following element is used to inject a value into a static factory method?
+Single Choice - Select one correct answer from the options list. 
+
+
+<property>
+
+
+<static>
+
+
+<factory-bean>
+
+
+<constructor-arg> 
+
+Q26
+  
+Which method of DisposableBean interface is called when bean is about to be disposed by container
+Single Choice - Select one correct answer from the options list. 
+
+
+destroy
+
+
+dispose
+
+
+beforeDispose
+
+
+None of the above
+
+Q27
+  
+What are the different points where weaving can be applied?
+Single Choice - Select one correct answer from the options list. 
+
+
+RunTime.
+
+
+CompileTime.
+
+
+ClassLoadTime.
+
+
+All the Above.
+
+Q28
+  
+DevTools is enabled in the production
+environment by default.
+True or False - Select the correct answer 
+
+
+TRUE
+
+
+FALSE
+
+Q29
+  
+Which of the following is not the scope of beans in spring
+Single Choice - Select one correct answer from the options list. 
+
+
+Application
+
+
+Request
+
+
+Prototype
+
+
+Singleton
+
+Q30
+  
+How to configure JNDI instead of datasource in spring applicationcontext.xml?
+Single Choice - Select one correct answer from the options list. 
+
+
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <property name="className">
+    <values>java:comp/env/jdbc/appfuse</values>
+  </property>
+</bean>
+ 
+
+
+
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean name="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <property name="viewClass">
+    <value>java:comp/env/jdbc/appfuse</value>
+  </property>
+</bean>
+ 
+
+
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <properties name="jndiDataSource">
+    <value>java:comp/env/jdbc/appfuse</value>
+  </properties>
+</bean>
+ 
+
+
+You can configure JNDI instead of datasource in spring applicationcontext.xml using "org.springframework.jndi.JndiObjectFactoryBean". For Example:
+
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  <property name="jndiName">
+    <value>java:comp/env/jdbc/appfuse</value>
+  </property>
+</bean>
+ 
+
+Spring
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+1 out of 30 
+ Submit Assessment
